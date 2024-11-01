@@ -1,0 +1,244 @@
+
+
+/* Colors and Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #555555;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styling */
+header {
+    background-image: url("assests/images/abstract.jpg");
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #00509e;
+    padding: 10px 0;
+    text-align: center;
+    border: #333 solid 4px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #cce5ff;
+}
+
+/* Simplified Dropdown Menu */
+.dropdown-content {
+    display: none;
+    background-color: #00509e;
+    padding: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute; /* Ensures it appears in place when hovered */
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 5px 15px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #cce5ff;
+}
+
+/* Section Styling */
+section {
+    margin: 40px auto;
+    padding: 15px;
+    width: 80%;
+    background-color: rgb(207, 230, 250);
+    border:  #00509e 4px solid;
+    border-radius: 6px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #00509e;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #00509e;
+    margin-bottom: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Module Description */
+.module-description,
+.student-reviews {
+    max-width: 80%;
+    margin: 20px auto;
+    line-height: 1.6;
+    text-align: center;
+    background-color: rgb(207, 230, 250);
+}
+
+/* Image Layout */
+.module-images {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.module-images figure {
+    text-align: center;
+    width: 180px;
+}
+
+.module-images img {
+    width: 100%;
+    height: 150px;
+}
+
+.module-images figcaption {
+    font-size: 13px;
+    color: #555;
+    margin-top: 5px;
+}
+.module-images em {
+color: #00509e;
+}
+
+/* Star Styling */
+.stars span {
+    color: #f39c12; /* Gold color */
+    font-size: 16px;
+    margin-right: 2px;
+}
+/* Staff Section Styling */
+
+.staff-section {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 4px solid #00509e; /* Full border */
+}
+
+.staff-member {
+    background: rgb(172, 172, 172);
+    border: 4px solid #00509e;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%; /* Centered and prevents overflow */
+}
+
+.staff-member img {
+    width: 20%; /* Smaller size */
+    margin-bottom: 10px;
+}
+
+
+.staff-member p {
+    margin: 5px 0;
+    font-size: 18px; /* Unified font size */
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #00509e;
+    padding: 10px;
+    color: white;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.social-icons img {
+    width: 20px;
+    margin: 0 5px;
+}
+
+@media (max-width: 700px) {
+    /* Adjusts the width of sections for better mobile fit */
+    .container, section {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Center-aligns text and removes extra padding */
+    header, nav, .hero, .staff-member, .module-images {
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Ensures navigation items are stacked vertically */
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Expands input fields and buttons to full width */
+    #registration input, #registration select, #registration input[type="submit"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* Adjusts image sizes to fit smaller screens */
+    .module-images img, .staff-member img {
+        width: 80%; /* Reduces image size for better layout */
+        height: auto;
+    }
+}
