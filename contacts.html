@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Science - Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <header id="top">
+        <div class="header-text">
+            <!-- Logo links to home page -->
+            <a href="index.html"><img src="assests/images/uu.png" class="header-image" alt="University Logo"></a>
+        </div>
+    </header>
+
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="about.html"><b>About</b></a></li>
+                <li class="dropdown"><a href="modules.html"><b>Modules</b></a>
+                    <div class="dropdown-content">
+                        <a href="#">Module</a>
+                        <a href="#">Module</a>
+                        <a href="#">Module</a>
+                        <a href="#">Module</a>
+                    </div>
+                </li>
+                <li class="active"><a href="contacts.html"><b>Contacts</b></a></li>
+                <li><a href="staff.html"><b>Staff</b></a></li>
+            </ul>
+        </nav>
+    </div>
+
+   <!-- Hero Section -->
+<div class="hero">
+    <section class="hero-heading">
+        <h2>Contact Us</h2>
+    </section>
+</div>
+
+<!-- Main Contact Information -->
+<div class="container">
+    <section id="contact-details">
+        <h2>Contact Information</h2>
+        <p><img src="assests/images/email.png"> Email: <a href="mailto:info@university.edu">info@university.edu</a></p>
+        <p><img src="assests/images/phone.png"> Phone: <a href="tel:+441234567890">+44 1234 567 890</a></p>
+        <p><img src="assests/images/address.jpg"> Address: Northland Rd, Londonderry, BT48 7JL</p>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="registration">
+        <h2>Register Your Interest</h2>
+        <p>Fill out the form below, and we’ll reach out with more details!</p>
+        <form action="submit_registration.php" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+            <label for="course">Course of Interest:</label>
+            <select id="course" name="course" required>
+                <option value="">--Please choose a course--</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="data-science">Data Science</option>
+                <option value="software-engineering">Software Engineering</option>
+                <option value="cyber-security">Cyber Security</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Google Map Section -->
+    <section id="map">
+        <h2>Find Us Below</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1220.8005269912096!2d-7.32335621560349!3d55.00653818581265!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2suk!4v1728934024958!5m2!1sen!2suk"
+                width="100%" height="400">
+        </iframe>
+        <p><a href="https://www.google.co.uk/maps/place/Ulster+University,+Derry-Londonderry+Campus/@55.007568,-7.3228834,17.89z/data=!4m6!3m5!1s0x485fe22a6037f471:0x5308c53140e88647!8m2!3d55.0062362!4d-7.3236107!16zL20vMDU3Z2p2?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">Get directions to our campus</a></p>
+    </section>
+</div>
+
+
+
+
+    <!-- Basic footer with social media icons -->
+    <footer>
+        <div class="footer">
+            <p><a href="#top">Back to top</a></p>
+            <p>
+                <a href="https://x.com/ulsteruni"><img src="" alt="Twitter"></a>
+                <a href="https://www.instagram.com/ulsteruni/"><img src="assests/images/instagram.png"
+                        alt="Instagram"></a>
+                <a href="https://www.facebook.com/studyatulster"><img src="assests/images/facebook.png"
+                        alt="Facebook"></a>
+            </p>
+            <p>&copy; 2024 Ulster University</p>
+        </div>
+    </footer>
+</body>
+
+</html>
